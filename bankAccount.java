@@ -1,7 +1,7 @@
 public class bankAccount {
-	String name;
+	private String name;
 	private String password = "";
-	double balance;
+	private double balance;
 
 	public void withdraw(String enteredPassword, double amount){
 		//Only people with the right password and sufficient funds can withdraw
