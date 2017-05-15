@@ -7,6 +7,8 @@ public class bankAccount {
 		//Only people with the right password and sufficient funds can withdraw
 		if (password.equals(enteredPassword) && balance >= amount){
 			balance = balance - amount;
+		} else if (amount > balance) {
+			System.out.println("Insufficient funds.");
 		}
 	}
 
